@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Made/Modified by Alexandr Popenko
+4-15-2021
+CGS1821.0M1: WEB AUTH 2
+Final Project
+
+Added navigation and slicknav menus.
+pointed the links to the correct pages.
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mythical Metals | Survey</title>
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/submit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+
+  <header>
+  	
+   	<h2>Mythical Metals</h2>
+   
+  </header>
+ <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="../final_project_home/index.html">Home</a></li>
+    	<li><a href="../final_project-metals/final_project_myth.html">Mythological Metals</a></li>
+    	<li><a href="../final_project-metals/final_project_fantasy.html">Fantasy Metals</a></li>
+    	<li><a href="../final_project_form/final_project_form.html" class="current"> Survey Form</a></li>
+    	
+	</ul>
+  </nav>
+  <main>
+	
+	<section>
+        <fieldset>
+            <legend>Survey</legend>
+    	<h1>Please fill out this information:</h1>
+		<form action="submit_form.html" method="get" name="survey" id="survey">
+			<label for="first_name">Form of ID:</label>
+			<input type="text" name="first_name" id="first_name" autofocus required placeholder="E.g. Name or Username"><br>
+            
+            <br>
+            <p>Please select your favorite metal:</p>
+            <input type="radio" id="mradio" name="metal" value="mythril">
+            <label for="mradio">Mythril</label><br>
+            <input type="radio" id="aradio" name="metal" value="adamant">
+            <label for="aradio">Adamant</label><br>
+            <input type="radio" id="oradio" name="metal" value="orichalcum">
+            <label for="oradio">Orichalcum</label><br>
+            <input type="radio" id="nradio" name="metal" value="none">
+            <label for="nradio">None</label>
+            <br><br>
+            <p>Please select your interest level in fantasy:</p>
+			<input type="checkbox" id="checkboxes1" name="checkboxes1" value="high">
+            <label for="checkboxes1"> High</label><br>
+            <input type="checkbox" id="checkboxes2" name="checkboxes2" value="medium">
+            <label for="checkboxes2"> Medium</label><br>
+            <input type="checkbox" id="checkboxes3" name="checkboxes3" value="Boat">
+            <label for="checkboxes3"> Low</label>
+            <br>
+            <br>
+			
+            
+            <label for="mythology" >Do you like mythology?</label>
+            
+            <select name="mythology" id="mythology">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="kindof">Kind of</option>
+        
+            </select><br><br>
+            <br>
+            <label for="textarea">Any suggestions for other metals:</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+            
+			
+			
+            <br>
+            <label for="colors">What color would you expect Mythril to be?:</label>
+            <input type="color"  name="favcolor" value="#4287f5" id="colors">
+            <br><br>
+            
+			<input type="submit" name="submit" id="button" value="Subscribe">
+		</form>	
+            </fieldset>
+	</section>
+  </main>
+
+  <footer>
+	<p>&copy;2021, Mythical Metals, Alexandr Popenko</p>
+  </footer>
+</body>
+</html>

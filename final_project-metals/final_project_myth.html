@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Made/Modified by Alexandr Popenko
+4-15-2021
+CGS1821.0M1: WEB AUTH 2
+Final Project
+
+Created this page.
+Added slicknav menu.
+Linked other webpages to menu.
+Added description of website.
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mythical Metals | Mythological</title>
+    
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/myth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+
+  <header>
+  	<div class="headergrid">
+        <div class="header"><h2>Mythical Metals</h2></div>
+        <div class="image"><img src="../images/Ingot.png" alt="Metal Ingot" ></div>
+          
+    </div>
+   	
+      
+       
+   
+  </header>
+ <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="../final_project_home/index.html">Home</a></li>
+    	<li><a href="final_project_myth.html" class="current">Mythological Metals</a></li>
+    	<li><a href="../final_project-metals/final_project_fantasy.html">Fantasy Metals</a></li>
+    	<li><a href="../final_project_form/final_project_form.html"> Survey Form</a></li>
+    	
+	</ul>
+  </nav>
+  <main>
+      
+      
+      <div class="main">
+      <div class="columns"><p>Orichalcum is mentioned in ancient writings, mainly those of ancient greece and rome. It was probably either a precious metal that was later renamed, or a type of brass or bronze.</p>
+          <p>Corinthian Bronze was one of the most valuable alloys in ancient greek times. It is thought to be alloyed with precious metals like silver and gold, or just a very high quality type of bronze.</p>
+          <p>Damascus Steel was used mainly for sword blades, as it was very tough and resistant to shattering. It looks very distinctive with a wavy patterns of lines on it.
+          </p></div>
+          
+      <div class="coltwo"><video controls width="90%" height="90%">
+          <source src="../video/Metals.mp4" type="video/mp4"></video>
+          <p>This video shows three examples of what these metals could have looked like</p></div>
+      </div>
+      
+	
+	
+      
+  </main>
+
+  <footer>
+	<p>&copy;2021, Mythical Metals, Alexandr Popenko</p>
+      <br>
+<p>Credit to <a href="http://clipart-library.com/metal-bar-cliparts.html">Clipart Library</a> for metal ingot image.</p>
+  </footer>
+</body>
+</html>

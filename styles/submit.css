@@ -1,0 +1,213 @@
+/* Made/Modified by Alexandr Popenko
+4-15-2021
+CGS1821.0M1: WEB AUTH 2
+Final Project
+
+Added Navigation menu to Form page.
+
+
+*/
+html {
+	background-image: url("../images/bats.gif");	
+}
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 100%;
+    max-width: 800px;
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+h2{
+    text-align: center;
+    color:white;
+    padding: .5em;
+    font-family: 'Smythe', cursive;
+        
+}
+h3{
+
+   
+}
+/* Header */
+header { 
+    background-color: #4287f5;
+} 
+
+header h2 {
+	font-size: 300%;
+    
+}
+header h3 {
+	font-size: 125%;
+	padding-bottom: 15px;
+}
+
+/* Navigation menu */
+#nav_menu {
+	clear: left;
+}
+#nav_menu ul {
+    
+	list-style: none;
+	position: relative;
+    margin: 0;
+	padding: 0;
+    
+}
+#nav_menu ul li {
+	
+	width: 25%;
+    
+    float: left;
+}
+
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#nav_menu ul li:hover ul {
+	width: 100%;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 1em;
+	text-decoration: none;
+	background-color: blue;
+	color: aliceblue;
+}
+#nav_menu ul li a.current {
+	color: darkblue;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: deepskyblue;
+}
+/* Section */
+section {
+	width: 72.5%;
+    max-width: 580px;
+	margin-left:6em;
+	padding: 20px 40px 20px 20px;	
+}
+section h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+label {
+	float: left;
+	width: 8em;
+	text-align: left;
+    margin-left: 2em;
+    margin-top: .11em;
+}
+input {
+	margin-left: 0em;
+	margin-bottom: .5em;
+	width: 4em;
+}
+#button {
+	margin-top: .5em;
+	margin-left: 18em;
+	width: 8em;
+	background-color: #4287f5;
+	border: 2px solid black;
+    text-align: center;
+}
+#colors{
+    margin-top: 1em;
+}
+
+
+
+labeltext{
+    padding:1em;
+}
+#first_name{
+    width: 23em;
+}
+
+/* Footer */
+footer { 
+	background-color: #4287f5;
+    padding: 1em;
+    
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
+
+/* RWD menu*/
+#mobile_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+	html {
+		background-image: none;
+	}
+	body {
+		font-size: 90%;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	header h2 {
+		font-size: 300%;
+	}
+	section {
+		width: 100%;
+        margin-left: 0;
+		float: none;
+		padding-left: 5%;
+		padding-bottom: .5em; 
+	}
+	aside {
+		width: 90%;
+		float: none;
+		padding: 0 5% 1em 5%;
+	}
+	#nav_list ul {
+		width: 50%;
+		padding-left: 25%;
+		text-align: center;
+	}
+	#nav_list ul li a {
+		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 180%;
+	}
+	header h3 {
+		font-size: 115%;
+	}
+	section h1 {
+		font-size: 130%;
+	}
+	section h1:first-letter {
+		font-size: 180%;
+	}
+}
